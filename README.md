@@ -1,6 +1,6 @@
 # Parallel commands
 
-I've beeing [parallel](https://www.gnu.org/software/parallel/) as a daily tool to execute multiples commands faster.
+I've being [parallel](https://www.gnu.org/software/parallel/) as a daily tool to execute multiples commands faster.
 This has saved me a lot of time and I feel that I need to share something.
 
 ## How to use this
