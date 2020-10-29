@@ -15,6 +15,12 @@ Clone the repo and add the `bin` directory to your PATH
 sudo apt-get install parallel
 ```
 
+### macos install
+
+```shell
+brew install parallel
+```
+
 ### Parallel setup
 
 ```shell
