@@ -9,9 +9,7 @@ git -C {} fetch --prune ;
 echo job {#} completed {}
 EOF
 	echo "$parallel_commands"
-
-    find . -maxdepth $depth -name .git -type d -o -type l | \
-    sed -e 's%\/\.git%%g' | \
+    find . -maxdepth "${depth}" \( -type l -o -type d \) -exec test -e '{}/.git' ';' -print -prune | \
     parallel -j 50 "${parallel_commands}"
 }
 
