@@ -74,6 +74,15 @@ cd $_
 gh_owner=$(basename $(pwd)); github-print-user-repos.sh ${gh_owner} ${gh_owner}.txt
 ```
 
+#### List azure repositories
+
+```shell
+org=$(basename $(pwd)); az devops project list --detect true | \
+jq -r '.value[]|.id' | \
+parallel -j 10 "az repos list --project {} | jq -r '.[]|.sshUrl'" | \
+tee ${org}.txt
+```
+
 ## 03- Clone repos in parallel
 
 ### 3.1 from github
