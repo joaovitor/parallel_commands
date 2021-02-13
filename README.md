@@ -93,3 +93,9 @@ Given that you have a directory with multiple git repositories.
 ```shell
 time update-repos.sh
 ```
+
+This scripts accepts the depth of nesting directories that needs to have the code updated.
+
+```shell
+time update-repos.sh 3
+```
