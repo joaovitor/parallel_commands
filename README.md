@@ -9,16 +9,21 @@ Clone the repo and add the `bin` directory to your PATH
 
 ## 01- setup
 
+### Pre-requisites
+
+- [gnu-parallel](https://www.gnu.org/software/parallel/)
+- [jq](https://stedolan.github.io/jq/)
+
 ### Ubuntu install
 
 ```shell
-sudo apt-get install parallel
+sudo apt-get install-y parallel jq
 ```
 
 ### macos install
 
 ```shell
-brew install parallel
+brew install parallel jq
 ```
 
 ### Parallel setup
