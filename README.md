@@ -3,6 +3,10 @@
 I've being [parallel](https://www.gnu.org/software/parallel/) as a daily tool to execute multiples commands faster.
 This has saved me a lot of time and I feel that I need to share something.
 
+## Dev.to series of parallel posts
+
+- [gnu-parallel posts](https://dev.to/joaovitor/series/9461)
+
 ## How to use this
 
 Clone the repo and add the `bin` directory to your PATH
