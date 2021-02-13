@@ -32,19 +32,19 @@ brew install parallel jq
 echo 'will cite' | parallel --citation 1
 ```
 
-## 02- git txt list
+## 02- list github repos as a text list
 
 ### Token setup
 
 Create a [github user token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) with repo:public_repo permission and save it as GITHUB_TOKEN environment variable.
 
-### Organization repos
+### Github organization repos
 
 ```shell
 github-print-organization-repos.sh fluxcd fluxcd.txt
 ```
 
-### User repos
+### Github user repos
 
 ```shell
 github-print-user-repos.sh joaovitor joaovitor.txt
@@ -52,7 +52,7 @@ github-print-user-repos.sh joaovitor joaovitor.txt
 
 ### Day to day use
 
-#### List organization repos
+#### List github organization repos
 
 ```shell
 mkdir -p ~/github-orgs/fluxcd
@@ -60,7 +60,7 @@ cd $_
 gh_owner=$(basename $(pwd)); github-print-organization-repos.sh ${gh_owner} ${gh_owner}.txt
 ```
 
-#### List user repos
+#### List github user repos
 
 ```shell
 mkdir -p ~/github-orgs/joaovitor
