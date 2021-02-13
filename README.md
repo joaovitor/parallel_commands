@@ -26,10 +26,16 @@ sudo apt-get install-y parallel jq
 brew install parallel jq
 ```
 
-### Parallel setup
+### Parallel citation
+
+[Official explanation](https://www.gnu.org/software/parallel/parallel_design.html#Citation-notice) on that
 
 ```shell
-echo 'will cite' | parallel --citation 1
+parallel --citation
+
+and then type
+
+will cite
 ```
 
 ## 02- list github repos as a text list
