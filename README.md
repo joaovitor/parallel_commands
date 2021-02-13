@@ -65,11 +65,20 @@ gh_owner=$(basename $(pwd)); github-print-user-repos.sh ${gh_owner} ${gh_owner}.
 
 ## 03- Clone repos in parallel
 
+### 3.1 from github
+
 Given that you have a list of repos to be cloned, clone them in parallel.
 
 ```shell
 cd ~/github-orgs/fluxcd
 gh_owner=$(basename $(pwd)); cat ${gh_owner}.txt | parallel  -j 25 'clone-missing.sh {}; echo job {#} completed {};'
+```
+
+### 3.2 from azure
+
+```shell
+cd ~/azure-study/azuredevopsorg/
+az_owner=$(basename $(pwd)); cat ${az_owner}.txt | parallel  -j 25 'azure-clone-missing.sh {}; echo job {#} completed {};'
 ```
 
 ## 04- Pull in parallel
