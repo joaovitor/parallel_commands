@@ -21,7 +21,7 @@ Clone the repo and add the `bin` directory to your PATH
 ### Ubuntu install
 
 ```shell
-sudo apt-get install-y parallel jq
+sudo apt-get install -y parallel jq
 ```
 
 ### macos install
